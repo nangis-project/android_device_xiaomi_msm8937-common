@@ -15,13 +15,16 @@
 # limitations under the License.
 #
 
-# Overlay
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8937
+
+# Dirac
+$(call inherit-product, vendor/dirac/dirac.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
