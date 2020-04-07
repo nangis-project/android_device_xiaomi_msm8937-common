@@ -466,13 +466,12 @@ vendor/lib/libsmwrapper.so
 vendor/lib64/hw/sound_trigger.primary.msm8937.so
 
 # Media - from LA.UM.8.6.r1-02600-89xx.0
-lib/extractors/libmmparser.so
+lib/extractors/libmmparserextractor.so
 lib/libFileMux.so
 lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libOmxMux.so
 lib/vendor.qti.hardware.vpp@1.1.so
-lib64/extractors/libmmparser.so
 lib64/libFileMux.so
 lib64/libmmosal.so
 lib64/libmmparser_lite.so
@@ -480,6 +479,7 @@ lib64/libOmxMux.so
 lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
+vendor/lib/libDxHdcp.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
@@ -891,7 +891,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Wi-Fi - from Panther
 vendor/bin/wcnss_service
 
-# WiFi Display - from TA-1024
+# WiFi Display - from LA.UM.8.6.r1-02600-89xx.0
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
@@ -928,3 +928,4 @@ vendor/lib/libwfdhaldsmanager.so
 vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
+vendor/lib64/libwfdhdcpcp.so
