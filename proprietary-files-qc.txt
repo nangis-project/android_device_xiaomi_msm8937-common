@@ -614,7 +614,6 @@ vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
@@ -629,13 +628,19 @@ vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqmi.so
-vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
+
+# QMI - from LA.UM.8.6.r1-02600-89xx.0
+vendor/lib/libpdmapper.so
+vendor/lib/libqmi_cci.so
+vendor/lib64/libpdmapper.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqsocket.so
 
 # Radio - from Panther
 -app/QtiTelephonyService/QtiTelephonyService.apk
@@ -647,7 +652,6 @@ etc/permissions/qcrilhook.xml
 -framework/qcrilhook.jar
 -framework/uimlpalibrary.jar
 -framework/uimremotesimlocklibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/ipacm-diag
@@ -729,8 +733,15 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/radio/qcril_database/qcril.db
 
-# Radio - QTI Extension - from sakura
--framework/qti-telephony-common.jar
+# Radio - from LA.UM.8.6.r1-02600-89xx.0
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|71d083671c3ea4cd5e287a63fb254bb0ab60ed20
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml|68901007ba1a48ceb1b728fc3b5483dd51b5e3a0
+product/framework/qti-telephony-common.jar|ad2d24e6fb1b0484761c09a1fcc38da602f7f37b
+vendor/bin/adpl|5fba0bb0fe9eb4a4aa232763be47afc0739cafd2
+vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
+vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
+vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
+vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 
 # Radio - IMS - from Panther
 -app/imssettings/imssettings.apk
@@ -743,7 +754,6 @@ etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 -framework/com.qualcomm.qti.uceservice-V2.0-java.jar
 -framework/vendor.qti.ims.callinfo-V1.0-java.jar
 -framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
--priv-app/ims/ims.apk
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.imscmservice@2.0.so
 lib/com.qualcomm.qti.imscmservice@2.1.so
@@ -752,8 +762,6 @@ lib/lib-imscamera.so
 lib/lib-imsvideocodec.so
 lib/lib-imsvtextutils.so
 lib/lib-imsvtutils.so
-lib/libimscamera_jni.so
-lib/libimsmedia_jni.so
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
 lib/librcc.so
@@ -770,8 +778,6 @@ lib64/lib-imsvideocodec.so
 lib64/lib-imsvt.so
 lib64/lib-imsvtextutils.so
 lib64/lib-imsvtutils.so
-lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
 lib64/librcc.so
@@ -837,6 +843,11 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
+
+# Radio - IMS - from LA.UM.8.6.r1-02600-89xx.0
+product/lib64/libimscamera_jni.so|41fd9faa10818c9f7c5a14d372a07f79b0ca0daa
+product/lib64/libimsmedia_jni.so|7b418243f2740c103b3805e0470e45a400196900
+-product/priv-app/ims/ims.apk|7eaabefacc6a1a2def0a6ff4b489ceae1993d527
 
 # Sensors - from TA-1024
 -framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
