@@ -214,7 +214,8 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RECOVERY_FSTAB 		 := $(VENDOR_PATH)/rootdir/fstab.qcom
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
+TARGET_USES_QCOM_LEGACY_UM_SEPOLICY := true
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Wi-Fi
