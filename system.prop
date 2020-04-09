@@ -189,4 +189,6 @@ ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 rsist.sys.fflag.override.settings_network_and_internet_v2=true
 
-
+# ParanoidDoze
+ro.sensor.proximity=true
+ro.sensor.pocket=xiaomi.sensor.pocket
