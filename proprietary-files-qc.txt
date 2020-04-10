@@ -870,10 +870,11 @@ vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# Thermal - from TA-1024
+# Thermal - from LA.UM.8.6.r1-04000-89xx.0
 vendor/bin/thermal-engine
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
 
 # Time services - from TA-1024
 -vendor/app/TimeService/TimeService.apk
