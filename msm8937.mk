@@ -223,6 +223,12 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
+# HALS
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/audio \
+    hardware/qcom/media \
+    hardware/qcom/display
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
