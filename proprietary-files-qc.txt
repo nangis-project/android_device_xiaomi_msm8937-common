@@ -888,7 +888,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Wi-Fi - from Panther
+# Wi-Fi - from Bardock Pro
 vendor/bin/wcnss_service
 
 # WiFi Display - from LA.UM.8.6.r1-02600-89xx.0
