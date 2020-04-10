@@ -539,6 +539,10 @@ vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libswvdec.so
 
 # Perf - from LA.UM.8.6.r1-02600-89xx.0
+product/lib/vendor.qti.hardware.perf@1.0.so
+product/lib/vendor.qti.hardware.perf@2.0.so
+product/lib64/vendor.qti.hardware.perf@1.0.so
+product/lib64/vendor.qti.hardware.perf@2.0.so
 lib/libqti-at.so
 lib/libqti-perfd-client_system.so
 lib/vendor.qti.hardware.iop@1.0.so
@@ -551,6 +555,7 @@ vendor/bin/msm_irqbalance
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/perfconfigstore.xml
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
