@@ -27,9 +27,9 @@ INITIAL_COPYRIGHT_YEAR=2018
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-ARROW_ROOT="$MY_DIR"/../../..
+BOOTLEGGERS_ROOT="$MY_DIR"/../../..
 
-HELPER="$ARROW_ROOT"/vendor/arrow/build/tools/extract_utils.sh
+HELPER="$ARROW_ROOT"/vendor/bootleggers/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
 
     echo "Unable to find helper script at $HELPER"
@@ -38,7 +38,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper for common
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$ARROW_ROOT" true
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$BOOTLEGGERS_ROOT" true
 
 # Copyright headers and guards
 write_headers "land santoni"
@@ -54,7 +54,7 @@ write_footers
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$ARROW_ROOT" false
+    setup_vendor "$DEVICE" "$VENDOR" "$BOOTLEGGERS_ROOT" false
 
     # Copyright headers and guards
     write_headers
