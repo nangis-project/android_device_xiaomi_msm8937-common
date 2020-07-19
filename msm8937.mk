@@ -94,7 +94,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
     libunwind
 
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -327,7 +326,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service.custom
+    android.hardware.power@1.2-service-qti
 
 # RCS
 PRODUCT_PACKAGES += \
