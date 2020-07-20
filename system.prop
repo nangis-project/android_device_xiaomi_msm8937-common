@@ -74,6 +74,14 @@ persist.debug.wfd.enable=1
 persist.hwc.enable_vds=1
 debug.sdm.support_writeback=0
 
+# Dalvik
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed 
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.boot-dex2oat-threads=8 
+dalvik.vm.bg-dex2oat-threads=2
+dalvik.vm.dex2oat-threads=6
+
 # DRM
 drm.service.enabled=true
 
