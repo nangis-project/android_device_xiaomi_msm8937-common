@@ -76,7 +76,8 @@ PRODUCT_COPY_FILES += \
 
 # ANT
 PRODUCT_PACKAGES += \
-    AntHalService
+    AntHalService \
+    antradio_app
 
 # APEX
 PRODUCT_COPY_FILES += \
@@ -368,7 +369,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system \
-    telephony-ext
 
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
