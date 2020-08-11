@@ -211,6 +211,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
+# Power
+TARGET_USES_NON_LEGACY_POWERHAL := true
+
 # QCOM support
 BOARD_USES_QCOM_HARDWARE := true
 
